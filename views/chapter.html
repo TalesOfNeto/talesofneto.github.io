@@ -1,0 +1,8 @@
+
+<ui-view class="page-content"></ui-view>
+<div ng-show="isLoading" class="loader-overlay">
+  <div class="loading-message"></div>
+  <div class="progress">
+    <div style="width: {{percentLoaded}}%" class="progress-bar"></div>
+  </div>
+</div>

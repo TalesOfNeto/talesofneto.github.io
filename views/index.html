@@ -1,0 +1,27 @@
+
+<html ng-app="app" lang="{{lang}}" ng-cloak="ng-cloak">
+  <head>
+    <base href="/"/>
+    <meta charset="utf-8"/>
+    <meta name="description" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1"/>
+    
+    <!-- build:css(.tmp) /styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/styles/app.css"/><!-- endinject -->
+    <!-- endbuild -->
+    <!-- build:js(.tmp) /scripts/vendor.js -->
+    <!-- inject:js -->
+    <script src="/scripts/vendor.js"></script><!-- endinject -->
+    <!-- endbuild -->
+    <!-- build:js(.tmp) /scripts/app.js -->
+    <!-- inject:js -->
+    <script src="/scripts/app.js"></script><!-- endinject -->
+    <!-- endbuild -->
+    <title>Նետոյի առասպելը</title>
+  </head>
+  <body ng-class="'chapter-' + $state.current.page.chapter" class="page">
+    <ui-view class="page-content-wrapper"></ui-view>
+  </body>
+</html>

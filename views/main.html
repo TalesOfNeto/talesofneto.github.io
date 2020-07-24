@@ -1,0 +1,5 @@
+
+<div ng-swipe-up="toNext()" ng-swipe-down="toPrev()" class="page-content-wrapper">
+  <ui-view></ui-view>
+</div>
+<div class="page-controls"><a href="" ng-click="toPrev()" ng-class="{'disabled': $state.current.page.scene === 1}" class="slide-btn slide-up"></a><a href="" ng-click="toNext()" ng-class="{'disabled': $state.current.page.isLast}" class="slide-btn slide-down"></a><a href="" ng-click="changeLanguage('en')" class="lang-btn en"></a><a href="" ng-click="changeLanguage('hy')" class="lang-btn hy"></a></div>
